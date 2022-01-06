@@ -3,10 +3,10 @@
                                
 int main()
 {                    
-    Monsters m[10];
-    m[5].setarmor(100);
-    for(int i = 0; i <= 10;i++){
-        std::cout << m[i].getarmor() << "\n";
-    }    
+    Creature m[10];
+    m[0].defaultCreature(100,100,"human","vinny");
+    
+    std::cout << m[0].getarmor() << "\n" << m[0].getHealth() << "\n" << m[0].getType() << "\n" << m[0].getName();
+    
                                
 }                              

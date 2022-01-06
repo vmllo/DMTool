@@ -1,4 +1,4 @@
-
+#include <string>
 
 class stats
 {
@@ -21,13 +21,35 @@ public:
     {
         this->armor = armor;
     }
+    void setType(std::string type){
+            this->type = type;
+    }
+    void setName(std::string name){
+            this->name = name;
+    }
+    std::string getName(){
+            return name;
+    }
+    std::string getType(){
+            return type;
+    }
 
 protected:
     int health;
     int armor;
+    std::string type;
+    std::string name;
 };
-class Monsters: public stats {                  
-    public:                                      
-      int gethealth();            
+class Creature: public stats {                  
+    public:    
+       
+        void defaultCreature(int health, int armor, std::string type, std::string name){
+            stats::health = health;
+            stats::armor = armor;
+            stats::type = type;
+            stats::name = name;
+         }
+    
+        
                                                  
 };                                               
