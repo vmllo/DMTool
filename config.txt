@@ -1,0 +1,5 @@
+Name: Vinny
+Type: Human    
+Armor: 100  
+Health: 100 
+           
