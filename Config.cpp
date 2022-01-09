@@ -26,7 +26,6 @@ std::string* Config::parseData(std::string array[])
     int found = -1;                                                                                                                                                  
     int targeti = 0;                                                                                            
     int parsei = 0;                                                                                        
-    std::string target[5] = {"NumberofBadguys: ", "Name: ", "Type: ", "Armor: ", "Health: "};                                                                                             
     do                                                                                                                                                               
     {                                                                                                     
         found = -1;                                                                                       
@@ -40,7 +39,7 @@ std::string* Config::parseData(std::string array[])
                 array[parsei] = my_str;                                                           
                 parsei++;                                                                    
                 targeti++;                                                                         
-                if(targeti == 5){                                                                  
+                if(targeti == 6){                                                                  
                     targeti = 1;                                                                   
                 }                                                                            
             }                                                                                
